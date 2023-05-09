@@ -1,0 +1,22 @@
+def operacao(comando):
+    
+    entrada = open("input.txt", "r")
+    texto = entrada.read()
+    
+    if comando == 1:
+        print(texto)
+        print("Coloque sua chave:")
+        key = input()
+        
+        
+        #crip(texto)
+    else:
+        print("Nao")
+        
+    entrada.close()
+    
+comando = int(input())
+operacao(comando)
+
+def crip(texto):
+    for caracter in texto:
